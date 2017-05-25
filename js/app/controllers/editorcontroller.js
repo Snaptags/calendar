@@ -128,7 +128,7 @@ app.controller('EditorController', ['$scope', 'TimezoneService', 'AutoCompletion
 				error = true;
 			}
 			if ($scope.calendar === null || typeof $scope.calendar === 'undefined') {
-				OC.Notification.showTemporary(t('calendar', 'Please select a calendar!'));
+				OC.Notification.showTemporary(t('calendar', 'Please pick a calendar.'));
 				error = true;
 			}
 			if (!$scope.properties.checkDtStartBeforeDtEnd()) {
